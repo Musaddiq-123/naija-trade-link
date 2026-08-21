@@ -1,0 +1,269 @@
+body{
+font-family:Arial, sans-serif;
+margin:0;
+background:#f5f7fa;
+color:#222;
+}
+
+/* HEADER */
+header{
+background:#0b5e2a;
+color:white;
+padding:20px;
+display:flex;
+align-items:center;
+gap:15px;
+}
+
+header img{
+width:70px;
+height:auto;
+}
+
+header h1{
+margin:0;
+font-size:26px;
+}
+
+/* NAV */
+nav{
+background:#083d1d;
+padding:12px;
+text-align:center;
+}
+
+nav a{
+color:white;
+margin:12px;
+text-decoration:none;
+font-weight:bold;
+}
+
+nav a:hover{
+color:#ffd700;
+}
+
+/* SECTIONS */
+section{
+background:white;
+margin:30px auto;
+padding:30px;
+max-width:1000px;
+border-radius:8px;
+box-shadow:0 0 8px rgba(0,0,0,0.08);
+}
+
+/* HEADINGS */
+h2{
+color:#0b5e2a;
+border-bottom:2px solid #0b5e2a;
+padding-bottom:5px;
+}
+
+/* GALLERY */
+.gallery{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:15px;
+}
+
+.gallery img{
+width:100%;
+border-radius:6px;
+}
+
+/* FOOTER */
+footer{
+background:#0b5e2a;
+color:white;
+text-align:center;
+padding:20px;
+margin-top:40px;
+}
+
+/* SERVICES */
+
+.services-section h2 {
+    color: #0b5e2a;
+    border-bottom: 2px solid #0b5e2a;
+    padding-bottom: 5px;
+}
+
+.service-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    margin-top: 25px;
+}
+
+.service-item {
+    background: #f5f7fa;
+    border-left: 5px solid #0b5e2a;
+    padding: 20px;
+    border-radius: 6px;
+    transition: 0.3s;
+}
+
+.service-item h3 {
+    color: #0b5e2a;
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 19px;
+}
+
+.service-item p {
+    margin: 0;
+    line-height: 1.6;
+}
+
+/* HOVER EFFECT */
+
+.service-item:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+}
+
+/* MOBILE */
+@media (max-width: 700px) {
+
+    .service-list {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+/* SERVICES */
+
+.services-section h2 {
+    color: #0b5e2a;
+    border-bottom: 2px solid #0b5e2a;
+    padding-bottom: 5px;
+}
+
+.service-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    margin-top: 25px;
+}
+
+.service-item {
+    background: #f5f7fa;
+    border-left: 5px solid #0b5e2a;
+    padding: 20px;
+    border-radius: 6px;
+    transition: 0.3s;
+}
+
+.service-item h3 {
+    color: #0b5e2a;
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 19px;
+}
+
+.service-item p {
+    margin: 0;
+    line-height: 1.6;
+}
+
+/* HOVER EFFECT */
+
+.service-item:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+}
+
+/* MOBILE */
+
+@media (max-width: 700px) {
+
+    .service-list {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+/* CONTACT PAGE */
+
+.contact-intro {
+    text-align: center;
+    max-width: 750px;
+    margin: 20px auto 30px;
+    line-height: 1.7;
+}
+
+.contact-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.contact-card {
+    background: #f5f7fa;
+    border-top: 5px solid #0b5e2a;
+    padding: 25px;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    transition: 0.3s;
+}
+
+.contact-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+}
+
+.contact-icon {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.contact-card h3 {
+    color: #0b5e2a;
+    font-size: 20px;
+    margin-bottom: 12px;
+}
+
+.contact-card p {
+    line-height: 1.7;
+    margin-bottom: 18px;
+}
+
+.contact-button {
+    display: inline-block;
+    background: #0b5e2a;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.contact-button:hover {
+    background: #083d1d;
+    color: #ffd700;
+}
+
+.contact-message {
+    text-align: center;
+}
+
+.contact-message p {
+    max-width: 800px;
+    margin: 15px auto;
+    line-height: 1.7;
+}
+
+
+/* MOBILE CONTACT PAGE */
+
+@media (max-width: 700px) {
+
+    .contact-grid {
+        grid-template-columns: 1fr;
+    }
+
+}
