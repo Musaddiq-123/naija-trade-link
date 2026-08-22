@@ -269,7 +269,7 @@ margin-top:40px;
 }
 
 h3::before {
-    content: ">";
+    content: "⇛";
     margin-right: 10px;
     font-size: 18px;
     color: #0b5d3b;
