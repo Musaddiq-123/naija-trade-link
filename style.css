@@ -370,3 +370,240 @@ footer {
         font-size: 22px;
     }
 }
+
+
+/* =========================================
+   CORPORATE & REGISTRATION PAGE
+========================================= */
+
+.corporate-intro {
+    text-align: center;
+    max-width: 850px;
+    margin: 30px auto;
+}
+
+.corporate-intro p {
+    line-height: 1.8;
+    font-size: 17px;
+}
+
+
+/* COMPANY INFORMATION */
+
+.company-details {
+    margin-top: 30px;
+}
+
+.company-info-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin-top: 25px;
+}
+
+.info-card {
+    background: #f5f7fa;
+    padding: 22px;
+    border-left: 5px solid #0b5e2a;
+    border-radius: 8px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+}
+
+.info-card h3 {
+    color: #0b5e2a;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.info-card p {
+    margin: 0;
+    line-height: 1.5;
+}
+
+
+/* OFFICIAL DOCUMENTS */
+
+.certificates-section {
+    margin-top: 30px;
+}
+
+.certificate-intro {
+    text-align: center;
+    max-width: 750px;
+    margin: 0 auto 30px;
+    line-height: 1.7;
+}
+
+
+/* DOCUMENT CARDS */
+
+.certificate-card {
+    display: flex;
+    align-items: center;
+
+    gap: 25px;
+
+    background: #ffffff;
+
+    padding: 30px;
+
+    margin-bottom: 25px;
+
+    border-radius: 10px;
+
+    border-left: 6px solid #0b5e2a;
+
+    box-shadow: 0 4px 15px rgba(0,0,0,0.10);
+
+    transition: 0.3s ease;
+}
+
+.certificate-card:hover {
+    transform: translateY(-4px);
+
+    box-shadow: 0 8px 22px rgba(0,0,0,0.15);
+}
+
+
+/* DOCUMENT ICON */
+
+.certificate-icon {
+    font-size: 55px;
+
+    min-width: 75px;
+
+    text-align: center;
+}
+
+
+/* DOCUMENT CONTENT */
+
+.certificate-content {
+    flex: 1;
+}
+
+.certificate-content h3 {
+    color: #0b5e2a;
+
+    margin-top: 0;
+
+    font-size: 22px;
+}
+
+.certificate-content p {
+    line-height: 1.6;
+}
+
+
+/* BUTTONS */
+
+.certificate-button {
+    display: inline-block;
+
+    background: #0b5e2a;
+
+    color: white;
+
+    text-decoration: none;
+
+    padding: 11px 18px;
+
+    margin-top: 10px;
+
+    margin-right: 8px;
+
+    border-radius: 5px;
+
+    font-weight: bold;
+
+    transition: 0.3s ease;
+}
+
+.certificate-button:hover {
+    background: #083d1d;
+
+    color: #ffd700;
+}
+
+
+/* DOWNLOAD BUTTON */
+
+.certificate-button.secondary {
+    background: #ffd700;
+
+    color: #222;
+}
+
+.certificate-button.secondary:hover {
+    background: #e6c200;
+
+    color: #222;
+}
+
+
+/* CORPORATE COMMITMENT */
+
+.verification-section {
+    text-align: center;
+}
+
+.verification-section p {
+    max-width: 800px;
+
+    margin: 10px auto;
+
+    line-height: 1.7;
+}
+
+
+/* =========================================
+   MOBILE DESIGN
+========================================= */
+
+@media (max-width: 800px) {
+
+    .company-info-grid {
+        grid-template-columns: 1fr;
+    }
+
+
+    .certificate-card {
+        flex-direction: column;
+
+        text-align: center;
+    }
+
+
+    .certificate-icon {
+        min-width: auto;
+    }
+
+
+    .certificate-button {
+        display: block;
+
+        margin: 10px auto;
+
+        max-width: 250px;
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    .corporate-intro p {
+        font-size: 15px;
+    }
+
+
+    .certificate-card {
+        padding: 20px;
+    }
+
+
+    .certificate-content h3 {
+        font-size: 20px;
+    }
+
+}
