@@ -19,17 +19,50 @@
     <a href="gallery.html">Gallery</a>
     <a href="contact.html">Contact</a>
 </nav>
-<section>
-<h2>Our Activities</h2>
 
-<div class="gallery">
-<img src="images/pic1.jpg" width="300" height="300" alt="Trade Conference Abuja 2025">
-<img src="images/pic2.jpg" width="300" height="300" alt="Global Trade Forum 2024">
-<img src="images/pic3.jpg" width="300" height="300" alt="China-Nigeria Partnership">
-<img src="images/pic4.jpg" width="300" height="300" alt="Healthcare PPP Project">
+<section>
+    <h2>Our Activities</h2>
+
+    <div class="gallery-grid">
+
+        <img src="images/pic1.jpg"
+             alt="Trade Conference Abuja 2025"
+             onclick="openLightbox(this)">
+
+        <img src="images/pic2.jpg"
+             alt="Global Trade Forum 2024"
+             onclick="openLightbox(this)">
+
+        <img src="images/pic3.jpg"
+             alt="China-Nigeria Partnership"
+             onclick="openLightbox(this)">
+
+        <img src="images/pic4.jpg"
+             alt="Healthcare PPP Project"
+             onclick="openLightbox(this)">
+
+    </div>
+</section>
+
+<!-- Image Lightbox -->
+<div id="lightbox" class="lightbox" onclick="closeLightbox()">
+
+    <span class="close">&times;</span>
+
+    <img id="lightbox-img" src="" alt="Enlarged gallery image">
+
 </div>
 
-</section>
+<script>
+function openLightbox(image) {
+    document.getElementById("lightbox").style.display = "block";
+    document.getElementById("lightbox-img").src = image.src;
+}
+
+function closeLightbox() {
+    document.getElementById("lightbox").style.display = "none";
+}
+</script>
 
 <footer>
     © 2026 Naija Trade Link Ltd
