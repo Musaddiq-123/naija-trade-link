@@ -1461,34 +1461,3 @@ footer p {
     box-shadow:
         0 8px 20px rgba(0,0,0,0.2);
 }
-
-.services-hero {
-    width: 100vw;
-    min-height: 55vh;
-    max-height: 75vh;
-
-    margin-left: calc(50% - 50vw);
-    margin-right: 0;
-
-    padding: 0;
-    border-radius: 0;
-    position: relative;
-    box-sizing: border-box;
-
-    background:
-        linear-gradient(
-            rgba(5, 43, 21, 0.82),
-            rgba(5, 43, 21, 0.88)
-        ),
-        url("images/services-bg.jpg");
-
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    box-shadow: none;
-}
