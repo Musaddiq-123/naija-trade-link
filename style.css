@@ -1462,142 +1462,33 @@ footer p {
         0 8px 20px rgba(0,0,0,0.2);
 }
 
+.services-hero {
+    width: 100vw;
+    min-height: 55vh;
+    max-height: 75vh;
 
-/* =========================================================
-   SERVICES MOBILE RESPONSIVENESS
-   ========================================================= */
+    margin-left: calc(50% - 50vw);
+    margin-right: 0;
 
-@media (max-width: 1000px) {
+    padding: 0;
+    border-radius: 0;
+    position: relative;
+    box-sizing: border-box;
 
-    .service-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
+    background:
+        linear-gradient(
+            rgba(5, 43, 21, 0.82),
+            rgba(5, 43, 21, 0.88)
+        ),
+        url("images/services-bg.jpg");
 
-    .support-steps {
-        grid-template-columns: repeat(2, 1fr);
-    }
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 
-    .support-step {
-        border-right: none;
-        border-bottom: 1px solid rgba(255,255,255,0.15);
-        padding-bottom: 30px;
-    }
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
-}
-
-
-@media (max-width: 700px) {
-
-    .services-hero {
-        min-height: 400px;
-    }
-
-    .services-hero-overlay {
-        padding: 50px 15px;
-    }
-
-    .services-hero h2 {
-        font-size: 32px;
-    }
-
-    .services-hero p:not(.hero-small-title) {
-        font-size: 14px;
-    }
-
-
-    .services-intro {
-        margin-top: 50px;
-    }
-
-
-    .services-intro h2 {
-        font-size: 28px;
-    }
-
-
-    .service-grid {
-        grid-template-columns: 1fr;
-    }
-
-
-    .professional-service-card {
-        padding: 30px 24px;
-    }
-
-
-    .support-section {
-        padding: 60px 25px;
-    }
-
-
-    .support-heading h2 {
-        font-size: 28px;
-    }
-
-
-    .support-steps {
-        grid-template-columns: 1fr;
-        gap: 10px;
-    }
-
-
-    .support-step {
-        border-bottom: 1px solid rgba(255,255,255,0.15);
-        padding: 25px 10px;
-    }
-
-
-    .support-step:last-child {
-        border-bottom: none;
-    }
-
-
-    .services-cta {
-        margin: 50px 20px;
-
-        padding: 55px 25px;
-    }
-
-
-    .cta-content h2 {
-        font-size: 28px;
-    }
-
-}
-
-
-@media (max-width: 480px) {
-
-    .services-hero {
-        min-height: 440px;
-    }
-
-
-    .hero-small-title {
-        font-size: 11px;
-        letter-spacing: 2px;
-    }
-
-
-    .services-hero h2 {
-        font-size: 28px;
-    }
-
-
-    .service-icon {
-        width: 52px;
-        height: 52px;
-    }
-
-
-    .professional-service-card h3 {
-        font-size: 18px;
-    }
-
-
-    .services-cta {
-        margin-left: 15px;
-        margin-right: 15px;
-    }
-
+    box-shadow: none;
 }
