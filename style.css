@@ -1492,13 +1492,3 @@ footer p {
 
     box-shadow: none;
 }
-
-.service-hero {
-   width: 100vw
-   margin-left: calc(50% - 50vw);
-   min-height: 430px;
-
-   background-size: cover;
-   background-position: center;
-   background-repeat: no-repeat;
-}
